@@ -529,13 +529,15 @@ img {
   }
 }
 
+/*  education and */
 .row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .col {
-  flex: 1;
+  flex: 1 1 100%;
   margin: 20px;
 }
 
@@ -576,6 +578,13 @@ p {
   line-height: 1.5;
 }
 
+@media (min-width: 768px) {
+  .col {
+    flex: 0 0 30%;
+  }
+}
+
+
 
 .skills__bar.skills__html {
   background-color: #6EE7B7; /* Update the background color to your desired color */
@@ -588,3 +597,19 @@ p {
 .skills__bar.skills__html:after {
   background-color: #b9c50a; /* Update the background color to a darker shade of your desired color */
 }
+
+
+/*      cv  */
+.button {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+/*  dark */
